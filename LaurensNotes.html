@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- Lauren Kukulka's notes on the Intoduction to Programming Nano Degree.-->
+<head>
+  <!-- This is where I have identified the Style sheet corresponding to this HTML. The title element sets the name of the browser tab.-->
+    <link rel="stylesheet" type="text/css" href="LKNotes.css">
+  <title>Lauren Kukulka's Notes</title>
+</head>
+
+<body>
+<!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+  <h1>
+    <span class="italic">Into to Programming : Lauren Kukulka's Notes</span>
+  </h1>
+  <div class="image">
+      <img src="images/LaurenNoteMan.png" alt="someone studying">
+  </div>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">Major Pieces of the Web</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3">HTML Markup</a></li>
+          <li><a href="#lesson-1-4">HTML Attriabutes</a></li>
+          <li><a href="#lesson-1-5">Span and Div</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Stage 1</a></li>
+          <li><a href="#lesson-2-2">The Basics</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">CSS and HTML</a></li>
+          <li><a href="#lesson-3-2">What is CSS?</a></li>
+          <li><a href="#lesson-3-3">Boxes</a></li>
+          <li><a href="#lesson-3-4">Reflection</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+
+
+<!-- Lesson 1.-->
+<div class="lesson">
+  <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+  <div class="item" id="lesson-1-1">
+    <div class="item-label">
+      Major Pieces of the Web.
+    </div>
+    <div class="item-description">
+     <div>
+        Person
+        <br>Computer/browser makes HTTP Calls 
+        <br>Internet
+        <br>Server - Optimized for sitting in a closet hosting files.
+      </div>
+    </div>
+  </div>
+  <div class="item" id="lesson-1-2">
+    <div class="item-label">
+      HTML
+    </div>
+    <div class="item-description">
+      <div>
+        <p>
+          - Made up of text contet, what you see
+          <br>  - Markup - what it looks like or how it is arranged
+          <br>  - References to other documents
+          <br>	- Links to other pages
+        </p>
+      </div>
+    </div>  
+  </div>
+  <div class="item" id="lesson-1-3">
+    <div class="item-label">
+      HTML Markup
+    </div>
+    <div class="item-description">
+      <div>
+        <p>  
+          Opening tag. Then the closing tag after the content.  This whole thing is an element.
+          <br><br>
+          Application to make simple HTML pages : <a href="http://scratchpad.io/">Scratchpad.io</a> 
+          <br>
+          <br><span class="bold">b</span> - This bolds
+          <br><span class="bold">em</span> - This makes things <span class="italic">italic</span>.  Em is for Emphasis.
+          <br><br>
+        </p>
+      </div>
+    </div>  
+  </div>
+  <div class="item" id="lesson-1-4">
+    <div class="item-label">
+      HTML attriabutes
+     </div>
+    <div class="item-description">
+      <div>
+        <p>
+          - TAG ATTR="value"> contents END TAG
+          <br>	- To make this a link, see below.  The "a" tag is an Anchor tag.
+          <br>	- TAG a href="www.udacity.com"> Contents END TAG a
+        </p>
+      </div>
+      <div>
+        <p>  
+          <span class="bold">Image tags is called <span class="italic">img</span></span>
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="italic">src</span> is source
+          <br>Alternate text if the image that does not load.  It is also for the blind.  Images don't have a closing tag.  It is a Void Tag, it does not have content.  Images wil appear in line with text.
+          <br><br> tag img src="URL" alt="txt"
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="bold">White space</span>
+       </p>
+      </div>
+      <div>
+        <p>	
+          - Even though text is on multiple lines, it is all on one line.  A single space
+          <br>- <span class="italic">br</span> - this is also a void tag and it stands for "break"
+          <br><br>
+          Another way to add information is the <span class="italic">p</span> Paragraph tag.  This is not a void tag, so there is an opening and closing tag
+          <br><br>
+          Why do we have two different ways to break lines. Paragraph tag allows you to have a box with height and width.  It is kinda like an invisible box.
+          <br><br>
+          <span class="bold">Container elements:</span> elements that do nothing but contain stuff inside themselves
+      </div>
+    </div>
+  </div>
+  <div class="item" id="lesson-1-5">
+    <div class="item-label">
+      Span and Div
+    </div>
+    <div class="item-description">
+      <p>
+        <br><span class="italic">Span</span> is inline and <span class="italic">Div</span> is in block.
+        <br><br>open tag span class ="foo">  The class is css end tag span
+        <br><br>open  tag div class ="bar"> content end tag div
+        <br><br><span class="italic">Div</span> puts that data in an invisible box.
+      </p>
+      <p> 
+        <span class="bold">HTML documents</span>
+      </p>
+      <p>The top of the page always starts with Document type.  
+        <br>Then the opening HTML tag and then the end HTML tag is at the very end.
+        <br><span class="bold">Head</span> - Meta-data  and references to Java Script or CSS files.
+        <br><span class="bold">Body</span> - this is the content of the document.
+      </p>
+    </div>
+  </div>
+    <div>
+      <p>The end of Lauren's notes for Lesson 1.  Thank you!
+      </p>
+    </div>
+  </div>
+
+<!-- Lesson 2.-->
+<div class="lesson">
+  <h2 id="lesson-2">Lesson 2 Notes</h2>
+</div>
+<div class="item" id="lesson-2-1">
+  <div class="item-label">
+        Stage 1
+  </div>
+  <div class="item-description">
+    <br>
+    <p>
+      <span class="bold">Overview :</span> Front end Web development is very visual.
+      <br>Next video 
+      <br>
+      - Why HTML, CSS and Java Script (N/A for this Nano Degree)
+      <br>
+      -  They all have different purposes.  
+      <br>
+      <span class="bold">Objective :</span> Breakdown a current webpage and make it for our purposes.  Then develop CSS Framework to make the web page faster
+      <br>
+      Websites are like your house.
+      <span class="italic">	- House is HTML, the layout.</span>
+  	  -CSS files are the style of the house - color of walls
+    	-Java - interactive components Garage door opener, or remote
+    </p>	
+  </div>
+</div>    
+<div class="item" id="lesson-2-2">
+  <div class="item-label">
+    The Basics
+  </div>
+  <div class="item-description">
+    <div>
+      <p>
+        <span class="bold">To see the structure of a page:</span>
+  	     Be in Google Chrome.  In the upper Rt corner there  are a 3 llines.  Go to Tools -> Developer Tools and a section in the bottom will open up.  What you see here is not the code itself, but how the browser inteprets it.  There is a separate panel on the right called Styles. 
+        <br>
+        <br>
+	      Sideways triangles are opening and closing elements of a tag.  It makes a tree structure.  Each layer is ended with a close tag.
+        <br>
+        <br>	
+        <span class="italic">The important things to take away from this are:</span>
+        <br>
+        - HTML and CSS are both "languages"
+        <br>
+		    - HTML controls the "structure" of a web page
+        <br>
+		    - CSS controls the "style" of a page (how it looks).
+        <br>
+		    - When programmers talk about the "DOM" (Document Object Model) they are talking about the tree-like structure of a page.
+  	     To learn more about what a "tree-like structure" means, read the first two paragraphs of the wikipedia article on Tree Structures.
+  	    In Google, how to inspect an element.  Right Click and select "Inspect Element" 
+    	   You can see the details of that element.
+      </p>
+    </div>
+  </div>
+</div>
+<div>
+  <p>The end of Lauren's notes for Lesson 2.  Thank you!
+  </p>
+</div>
+<!-- Lesson 3.-->
+<div class="lesson">
+  <h2 id="lesson-3">Lesson 3 Notes</h2>
+</div>
+<div class="item" id="lesson-3-1">
+  <div class="item-label">
+    CSS and HTML
+  </div>
+  <div class="item-description">
+    Add the document type, and identify it as HTML Tags. dd Head Tags with the link to the style file.  If you type style, then tab, Sublime auto fills except the name of the file.
+    <br>
+    Don't forget to indent your code!
+  </div>
+</div>
+<div class="item" id="lesson-3-2">
+  <div class="item-label">
+      What is CSS?
+  </div>
+  <div class="item-description">
+    <span class="bold">CSS</span> means <span class="italic">Cascading style sheets</span>
+    You can have many Cascading Style sheets (CSS).  An example are laws :
+    <br>
+    - National laws -> State Laws -> Municipality Laws -> House Rules
+    <br>- With CSS, the most specific rule is applied to every element.  You keep going down and down into the rules to the one that most applies. (Hmmmm)
+    <br>- House Rules would be law for all… Theme park Tuesdays
+    <br>- The CSS Inheritance article on <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">wikipediea</a>
+    <br><br>
+    In CSS, you write a selector and that rule will apply to all tags.  So, you can apply a rule to all paragraphs. Or you can use a particular class.
+    <br><br>
+    <span class="bold">Colors:</span>
+    CSS has documentation.  There are a lot of attributes you can use. <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">CSS Reference Docs: </a>
+    <br><br>
+    <span class="bold"><span class="italic">CSS Summary and Reference</span></span>
+    <p>
+      What is CSS?  CSS is code written to control the "style" of HTML elements.
+      <br>
+      There is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to the identified element.
+      <br>
+      The line of code that says background-color : black; is a declaration. background-color is a property and black is the value of that property.
+      <br>
+      When applying rules in CSS, you can apply rules to all divs or just certain divs by using the appropriate selector.
+      <br>
+      How do I include CSS Styling in my web page?
+      <br>
+      <span class="bold">Method 1:</span> write CSS in the header of your HTML.  This method is good for very small projects in scratchpad.io.
+      <br><span class="bold">Method 2:</span> Link your HTML to a separate CSS file.  With this method, you can stay more organized when working on larger projects. 
+      <br>
+      <span class="bold">Method 3:</span> Write your style inline with your HTML.  This could lead to repeated code and is not recomended.. With this method, you modify the style attributes of every individual HTML element. 
+      <br>
+      <span class="bold">NOTE:</span> Everyone will make mistakes.  They will be small and you will make a lot of them!
+      <br><br>
+      <span class="bold">Comments</span>
+      <br>In HTML, code comments begin with open bracket !-- and end with -- close bracket. Everything in between is ignored.
+      <br>
+      In CSS, code comments begin with /* and end with */.
+    </p>
+  </div>
+</div>
+<div class="item" id="lesson-3-3">
+  <div class="item-label">
+    Boxes
+  </div>
+  <div class="item-description">
+    <p>
+      Box sizing. 
+      <br><br>
+      box-sizing: border-box;
+      <br><br>You need to add browser specific notation. webkit, moz and ms.  You can have the size as % or Pixel.  % will increase depending on the size of the screen, or it can be based on a set upmber of pixels.
+    </p>
+    <p>
+      <span class="bold">Box Sizing</span>
+      <br>
+      There are four main points that Jessica addressed about box sizing.
+      <br>1. HTML elements are boxes and each box has 4 components.
+      <br>2. Because there are so many components to each box, it can often be hard to get the size of a box just right.
+      <br><span class="italic">1. Set sizes in terms of percentages rather than pixels.
+      <br>2. Set the box-sizing attribute to border-box for every element.</span> 
+      <br>4. Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.
+      <br><br>
+      <span class="bold">Box Positioning</span>
+      <br>1. Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.
+      <br>2. Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.
+      <br><br> 
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flex </a>
+      <br><br>
+      <span class="bold">Code, Test, Refine</span>
+      <br>  1. Look for natural boexes
+      <br>  2. Look for repeated styles and sematic elements
+      <br>  3. Write your HTML
+      <br>  4. Apply Styles (from BIGGEST to smallest)
+      <br>  5. Fix things
+      <br><br> 
+      <span class="bold">Standards:</span> 
+      <br>You need to comply to standards to make sure it is compatible with all standards.  You can verify your code with the below links: 
+      <br>
+      <a href="http://validator.w3.org/#validate_by_input">To verify HTML</a>
+      <br>
+      <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">To verify CSS</a>
+    </p>
+  </div>
+</div>
+  <div class="item" id="lesson-3-4">
+    <div class="item-label">
+        Reflection
+    </div>
+      <div class="item-description">
+        <p>
+          There is a lot I don't know!  Based on what I have learned about the learning process, I am right where I should be.  I am past not knowing what I don't know and now I am ready to learn more and practice.
+          <br>
+          Some related facts from Lesson 3: 
+          <br>Casacading Style Sheets are pretty cool.  They will help standardize the code and make it easier for repeating elements.  Less coding because the standards are automatically updated where needed, removing repeated code. I have also learned more what our designers/coders will need to do their jobs better.  What information to give them so they can take our specifications and apply them to a better product.  The coding process is iterative, code, test and refine to ultimately get the web page to what the customer needs.
+        </p>
+      </div>
+  </div>
+  <div>
+     <p>The end of Lauren's notes for Lesson 3.  Thank you!
+     </p>
+   </div>
+</body>
